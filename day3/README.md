@@ -42,6 +42,7 @@
     ./bin/generate.exe top
 
     ```
+    Change the config param `part_1 = true` in `bin/generate.ml`, line #9, to build verilog for part 1, and to `false` for part 2.
 
 ## Approach and explanation
 
