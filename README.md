@@ -12,9 +12,9 @@ The project follows a consistent directory layout to keep source logic, testing,
     * **`test/`**: Testbench and AoC problem's input files
     * **`generate/`**: Verilog generation
     
-In `dayX/`, there are solutions to the AoC's problems in `python3`, along with some other python scripts for proof-of-concept.
+My approach and explanation of each day's solution and specific build instructions is in a local README in it's directory.
 
-My approach and explanation of the solution and specific build instructions are located within each day's directory, in their local READMEs.
+In `dayX/`, there are solutions to the AoC's problems in `python3`, along with some other python scripts for proof-of-concept.
 
 ## Prerequisites
 
