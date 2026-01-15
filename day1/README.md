@@ -13,11 +13,11 @@
     I use expect tests in the testbench, so upon running runtest, nothing should be printed. To run with another input, you may:
 
     - change the contents of `input.txt` with your AoC input, then re-build.
-    - choose to run with another AoC input (I got this from a friend). This is in `input2.txt` (in the same directory as `input.txt`). To do this, change line #10 of `test/test_dial.ml` and re-build
+    - run with `input2.txt` - another AoC input (I got this from a friend). To do this, change line #10 of `test/test_dial.ml` and re-build
         ```OCaml
         let file = "input2.txt"
         ```
-    - to run the test with your own file, first change the file variable to the name of your file, and add that file to the `deps` in `test/dune`
+    - run the test with your own file - first change the file variable to the name of your file, and add that file to the `deps` in `test/dune`
 
 2. The software solution can be run with
     ```bash
