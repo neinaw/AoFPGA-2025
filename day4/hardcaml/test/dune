@@ -1,0 +1,29 @@
+(library
+ (name part_1)
+ (modules test_conv2d)
+ (libraries
+  core
+  hardcaml
+  solution
+  hardcaml_test_harness
+  hardcaml_waveterm
+  re)
+ (preprocess
+  (pps ppx_hardcaml ppx_jane))
+ (inline_tests
+  (deps input.txt input2.txt input_ex.txt)))
+
+(library
+ (name part_2)
+ (modules test_erode)
+ (libraries
+  core
+  hardcaml
+  solution
+  hardcaml_test_harness
+  hardcaml_waveterm
+  re)
+ (preprocess
+  (pps ppx_hardcaml ppx_jane))
+ (inline_tests
+  (deps input.txt input2.txt input_ex.txt)))
