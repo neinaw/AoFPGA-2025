@@ -77,10 +77,11 @@ This uses the [asynchronous memory primitive](https://www.janestreet.com/web-app
 There is a second user-controlled read pointer, called *gods_eye* to convert the BCD answer in step 3. to an actual binary value. As the name suggests, *gods_eye* has free will to peek at any address in the stack. The data read from *gods_eye* is called *gods_view*, and is an output.
 
 #### Top-level module `src/top.ml`
-There is a parameter which controls which part (1/2) the top is for, and parameter for the depth of the stack.
+There is a parameter which controls which part (1/2) the top is for, and a parameter for the depth of the stack.
 
-For part 1, to_drop is 100-2 = 98 for my input
-For part 2, to_drop is 100-12 = 88 for my input
+For part 1, to_drop is 100-2 = 98; for part 2, it's 88
+
+The stack depth taken is 128, as the length of each row is 100
 
 This implements a state machine of the algorithm defined above. The final indexing is performed with *gods_eye* and *gods_view*, and the answer is accumulated over all rows in a 64 bit register.
 
