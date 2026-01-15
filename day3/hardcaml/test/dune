@@ -1,0 +1,28 @@
+(library
+ (name test_stack)
+ (modules test_stack)
+ (libraries
+  core
+  hardcaml
+  solution
+  hardcaml_test_harness
+  hardcaml_waveterm
+  re)
+ (preprocess
+  (pps ppx_hardcaml ppx_jane))
+ (inline_tests))
+
+(library
+ (name test_top)
+ (modules test_top)
+ (libraries
+  core
+  hardcaml
+  solution
+  hardcaml_test_harness
+  hardcaml_waveterm
+  re)
+ (preprocess
+  (pps ppx_hardcaml ppx_jane))
+ (inline_tests
+  (deps input.txt input2.txt input_ex.txt)))
