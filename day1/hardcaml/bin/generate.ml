@@ -21,7 +21,4 @@ let dial_rtl_command =
       fun () -> generate_dial_rtl ()]
 ;;
 
-let () =
-  Command_unix.run
-    (Command.group ~summary:"" [ "dial-top", dial_rtl_command ])
-;;
+let () = Command_unix.run (Command.group ~summary:"" [ "dial-top", dial_rtl_command ])
